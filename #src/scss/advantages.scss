@@ -1,0 +1,60 @@
+.advantages {
+	// .advantages__container
+	&__container {
+	}
+	// .advantages__row
+	&__row {
+		@include adaptiv-value("padding-top", 60, 20, 1);
+		@include adaptiv-value("padding-bottom", 40, 10, 1);
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0px -15px;
+		@media (max-width: $md3+px) {
+			margin: 0px -5px;
+		}
+	}
+	// .advantages__column
+	&__column {
+		padding: 0px 15px;
+		flex: 0 1 33.333%;
+		text-align: center;
+
+		@media (max-width: $md3+px) {
+			padding: 0px 5px;
+		}
+	}
+	// .advantages__item
+	&__item {
+	}
+}
+
+.item-advantages {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	// .item-advantages__icon
+	&__icon {
+		flex: 1 1 auto;
+		margin: 0px 0px 20px 0px;
+		@media (max-width: $md3+px) {
+			margin: 0px 0px 10px 0px;
+		}
+	}
+	// .item-advantages__title
+	&__title {
+		text-transform: uppercase;
+		font-weight: 600;
+		@include adaptiv-font(22, 12, 1);
+		margin: 0px 0px 10px 0px;
+	}
+	// .item-advantages__text
+	&__text {
+		@include adaptiv-font(18, 12, 1);
+		margin: 0px 0px 10px 0px;
+
+		line-height: 18 / 14 * 100%;
+		span {
+			font-weight: 700;
+		}
+	}
+}

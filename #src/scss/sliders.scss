@@ -1,0 +1,29 @@
+.sliders {
+	&__container{
+		@include adaptiv-value("margin-bottom", 50, 20, 1);
+	}
+	// .sliders__title
+	&__title {
+		text-align: center;
+		@include adaptiv-font(34, 22, 1);
+		line-height: 30px;
+		font-weight: 600;
+		@include adaptiv-value("margin-bottom", 20, 10, 1);
+	}
+}
+.slider {
+	background-color: rgb(245, 241, 241);
+	min-height: 100px;
+	display: flex;
+	align-items: center;
+	padding: 0px 30px;
+	cursor: pointer;
+}
+
+.slider-slide {
+	margin: 0px 5px;
+	@media (max-width: $md3+px) {
+		margin: 0px 2px;
+	}
+	width: auto;
+}

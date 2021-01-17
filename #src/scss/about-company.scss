@@ -1,0 +1,43 @@
+.about-company {
+	// .about-company__container
+	&__container {
+		
+		@include adaptiv-value("margin-bottom", 80, 30, 1);
+	}
+	// .about-company__title
+	&__title {
+		text-align: center;
+		font-weight: 600;
+		@include adaptiv-font(34, 22, 1);
+		@include adaptiv-value("margin-bottom", 25, 15, 1);
+	}
+	// .about-company__list
+	&__list {
+		li {
+			margin: 0px 0px 20px 0px;
+
+			&::before {
+				content: "";
+				display: inline-block;
+				width: 10px;
+				height: 10px;
+				margin: 0px 5px 0px 0px;
+				background-color: rgb(59, 139, 230);
+				border-radius: 50%;
+			}
+		}
+		line-height: 28 / 20 * 100%;
+		@include adaptiv-font(20, 16, 1);
+		span {
+			@include adaptiv-font(22, 16, 1);
+			font-weight: 600;
+		}
+	}
+	// .about-company__text
+	&__text {
+		@include adaptiv-font(20, 16, 1);
+		line-height: 28 / 20 * 100%;
+		
+		
+	}
+}

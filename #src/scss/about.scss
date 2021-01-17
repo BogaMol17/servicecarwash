@@ -1,0 +1,71 @@
+.about {
+	// .about__container
+	&__container {
+		@include adaptiv-value("margin-bottom", 40, 10, 1);
+	}
+	// .about__title
+	&__title {
+		text-align: center;
+		@include adaptiv-font(34, 22, 1);
+		line-height: 30px;
+		font-weight: 600;
+		@include adaptiv-value("margin-bottom", 20, 10, 1);
+	}
+	&__text {
+		@include adaptiv-font(20, 16, 1);
+		line-height: 30 / 20 * 100%;
+		@include adaptiv-value("margin-bottom", 30, 10, 1);
+		span {
+			@include adaptiv-font(22, 16, 1);
+			font-weight: 600;
+		}
+	}
+	// .about__row
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0px -15px;
+	}
+	// .about__column
+	&__column {
+		padding: 0px 15px;
+		flex: 0 1 25%;
+		margin: 0px 0px 20px 0px;
+		@media (max-width: $md3+px) {
+			flex: 0 1 50%;
+		}
+	}
+	// .about__item
+	&__item {
+	}
+}
+
+.item-about {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	// .item-about__icon
+	&__icon {
+		@include adaptiv-value("margin-bottom", 15, 10, 1);
+	}
+	// .item-about__title
+	&__title {
+		text-align: center;
+		font-weight: 500;
+		@include adaptiv-font(22, 16, 1);
+		@include adaptiv-value("margin-bottom", 20, 5, 1);
+	}
+	// .item-about__text
+	&__text {
+		text-align: center;
+		@include adaptiv-font(16, 14, 1);
+		@include adaptiv-value("margin-bottom", 10, 5, 1);
+	}
+	// .item-about__btn
+	&__btn {
+		width: 100%;
+		display: flex;
+		min-height: 40px;
+		@include adaptiv-font(18, 14, 1);
+	}
+}

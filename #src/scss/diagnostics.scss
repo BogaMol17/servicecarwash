@@ -1,0 +1,52 @@
+.diagnostics {
+	background: url("../img/bg.jpg") center / cover no-repeat;
+	color: #fff;
+	// .diagnostics__container
+	&__container {
+	}
+	&__body {
+		max-width: 800px;
+		@include adaptiv-value("padding-top", 40, 20, 1);
+		@include adaptiv-value("padding-bottom", 40, 20, 1);
+	}
+	// .diagnostics__title
+	&__title {
+		@include adaptiv-font(45, 32, 1);
+		line-height: 50 / 45 * 100%;
+		font-weight: 600;
+		text-shadow: 2px 2px 1px #000;
+		@include adaptiv-value("margin-bottom", 20, 10, 1);
+	}
+	// .diagnostics__text
+	&__text {
+		@include adaptiv-font(32, 24, 1);
+		line-height: 44 / 32 * 100%;
+		text-shadow: 2px 2px 1px #000;
+		@include adaptiv-value("margin-bottom", 30, 15, 1);
+		span {
+			color: yellow;
+			font-weight: 600;
+		}
+	}
+	// .diagnostics__contacts
+	&__contacts {
+		display: inline-block;
+		padding: 10px;
+		text-shadow: 2px 2px 1px #000;
+		background-color: rgba(0, 0, 0, 0.618);
+		@media (max-width: $md3+px) {
+			text-align: center;
+		}
+	}
+	&__tel {
+		@include adaptiv-font(48, 28, 1);
+		color: #fff;
+		font-weight: 600;
+		@include adaptiv-value("margin-bottom", 20, 10, 1);
+		display: inline-block;
+	}
+	// .diagnostics__timetable
+	&__timetable {
+		@include adaptiv-font(24, 16, 1);
+	}
+}
